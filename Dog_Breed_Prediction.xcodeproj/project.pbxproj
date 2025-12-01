@@ -7,18 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FF6DC3282EDD6BB400C8CE1E /* Dog_Breed_Prediction in Resources */ = {isa = PBXBuildFile; fileRef = FF6DC3262EDD6A2000C8CE1E /* Dog_Breed_Prediction */; };
-		FF6DC32B2EDD6DAD00C8CE1E /* dogBreed.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = FF6DC3292EDD6BF500C8CE1E /* dogBreed.mlpackage */; };
+		FF6DC3472EDD732700C8CE1E /* dogBreed.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = FF6DC3292EDD6BF500C8CE1E /* dogBreed.mlpackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FF6DC3002EDCD86600C8CE1E /* Dog_Breed_Prediction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dog_Breed_Prediction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF6DC3262EDD6A2000C8CE1E /* Dog_Breed_Prediction */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Dog_Breed_Prediction; sourceTree = "<group>"; };
 		FF6DC3292EDD6BF500C8CE1E /* dogBreed.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; name = dogBreed.mlpackage; path = Dog_Breed_Prediction/dogBreed.mlpackage; sourceTree = "<group>"; };
+		FF6DC3302EDD72EC00C8CE1E /* Dog_Breed_Prediction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dog_Breed_Prediction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FF6DC3432EDD72EE00C8CE1E /* Exceptions for "Dog_Breed_Prediction" folder in "Dog_Breed_Prediction" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = FF6DC32F2EDD72EC00C8CE1E /* Dog_Breed_Prediction */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		FF6DC3312EDD72ED00C8CE1E /* Dog_Breed_Prediction */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FF6DC3432EDD72EE00C8CE1E /* Exceptions for "Dog_Breed_Prediction" folder in "Dog_Breed_Prediction" target */,
+			);
+			path = Dog_Breed_Prediction;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
-		FF6DC2FD2EDCD86600C8CE1E /* Frameworks */ = {
+		FF6DC32D2EDD72EC00C8CE1E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +53,7 @@
 			children = (
 				FF6DC3292EDD6BF500C8CE1E /* dogBreed.mlpackage */,
 				FF6DC3262EDD6A2000C8CE1E /* Dog_Breed_Prediction */,
+				FF6DC3312EDD72ED00C8CE1E /* Dog_Breed_Prediction */,
 				FF6DC3012EDCD86600C8CE1E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +61,7 @@
 		FF6DC3012EDCD86600C8CE1E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FF6DC3002EDCD86600C8CE1E /* Dog_Breed_Prediction.app */,
+				FF6DC3302EDD72EC00C8CE1E /* Dog_Breed_Prediction.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,23 +69,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FF6DC2FF2EDCD86600C8CE1E /* Dog_Breed_Prediction */ = {
+		FF6DC32F2EDD72EC00C8CE1E /* Dog_Breed_Prediction */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF6DC3132EDCD86800C8CE1E /* Build configuration list for PBXNativeTarget "Dog_Breed_Prediction" */;
+			buildConfigurationList = FF6DC3442EDD72EE00C8CE1E /* Build configuration list for PBXNativeTarget "Dog_Breed_Prediction" */;
 			buildPhases = (
-				FF6DC2FC2EDCD86600C8CE1E /* Sources */,
-				FF6DC2FD2EDCD86600C8CE1E /* Frameworks */,
-				FF6DC2FE2EDCD86600C8CE1E /* Resources */,
+				FF6DC32C2EDD72EC00C8CE1E /* Sources */,
+				FF6DC32D2EDD72EC00C8CE1E /* Frameworks */,
+				FF6DC32E2EDD72EC00C8CE1E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				FF6DC3312EDD72ED00C8CE1E /* Dog_Breed_Prediction */,
+			);
 			name = Dog_Breed_Prediction;
 			packageProductDependencies = (
 			);
 			productName = Dog_Breed_Prediction;
-			productReference = FF6DC3002EDCD86600C8CE1E /* Dog_Breed_Prediction.app */;
+			productReference = FF6DC3302EDD72EC00C8CE1E /* Dog_Breed_Prediction.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -77,7 +101,7 @@
 				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
-					FF6DC2FF2EDCD86600C8CE1E = {
+					FF6DC32F2EDD72EC00C8CE1E = {
 						CreatedOnToolsVersion = 16.4;
 					};
 				};
@@ -96,88 +120,33 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FF6DC2FF2EDCD86600C8CE1E /* Dog_Breed_Prediction */,
+				FF6DC32F2EDD72EC00C8CE1E /* Dog_Breed_Prediction */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FF6DC2FE2EDCD86600C8CE1E /* Resources */ = {
+		FF6DC32E2EDD72EC00C8CE1E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF6DC3282EDD6BB400C8CE1E /* Dog_Breed_Prediction in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FF6DC2FC2EDCD86600C8CE1E /* Sources */ = {
+		FF6DC32C2EDD72EC00C8CE1E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF6DC32B2EDD6DAD00C8CE1E /* dogBreed.mlpackage in Sources */,
+				FF6DC3472EDD732700C8CE1E /* dogBreed.mlpackage in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		FF6DC3142EDCD86800C8CE1E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Dog_Breed_Prediction/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "sanford.Dog-Breed-Prediction";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		FF6DC3152EDCD86800C8CE1E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Dog_Breed_Prediction/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "sanford.Dog-Breed-Prediction";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		FF6DC3162EDCD86800C8CE1E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -212,6 +181,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				COREML_CODEGEN_LANGUAGE = Swift;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -275,6 +245,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				COREML_CODEGEN_LANGUAGE = Swift;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -297,6 +268,60 @@
 			};
 			name = Release;
 		};
+		FF6DC3412EDD72EE00C8CE1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Dog_Breed_Prediction/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sanford.Dog-Breed-Prediction";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF6DC3422EDD72EE00C8CE1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Dog_Breed_Prediction/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sanford.Dog-Breed-Prediction";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -309,11 +334,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF6DC3132EDCD86800C8CE1E /* Build configuration list for PBXNativeTarget "Dog_Breed_Prediction" */ = {
+		FF6DC3442EDD72EE00C8CE1E /* Build configuration list for PBXNativeTarget "Dog_Breed_Prediction" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FF6DC3142EDCD86800C8CE1E /* Debug */,
-				FF6DC3152EDCD86800C8CE1E /* Release */,
+				FF6DC3412EDD72EE00C8CE1E /* Debug */,
+				FF6DC3422EDD72EE00C8CE1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
