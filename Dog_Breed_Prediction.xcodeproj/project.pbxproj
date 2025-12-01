@@ -6,30 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FF6DC3282EDD6BB400C8CE1E /* Dog_Breed_Prediction in Resources */ = {isa = PBXBuildFile; fileRef = FF6DC3262EDD6A2000C8CE1E /* Dog_Breed_Prediction */; };
+		FF6DC32B2EDD6DAD00C8CE1E /* dogBreed.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = FF6DC3292EDD6BF500C8CE1E /* dogBreed.mlpackage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		FF6DC3002EDCD86600C8CE1E /* Dog_Breed_Prediction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dog_Breed_Prediction.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF6DC3262EDD6A2000C8CE1E /* Dog_Breed_Prediction */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Dog_Breed_Prediction; sourceTree = "<group>"; };
+		FF6DC3292EDD6BF500C8CE1E /* dogBreed.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; name = dogBreed.mlpackage; path = Dog_Breed_Prediction/dogBreed.mlpackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		FF6DC3122EDCD86800C8CE1E /* Exceptions for "Dog_Breed_Prediction" folder in "Dog_Breed_Prediction" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = FF6DC2FF2EDCD86600C8CE1E /* Dog_Breed_Prediction */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		FF6DC3022EDCD86600C8CE1E /* Dog_Breed_Prediction */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				FF6DC3122EDCD86800C8CE1E /* Exceptions for "Dog_Breed_Prediction" folder in "Dog_Breed_Prediction" target */,
-			);
-			path = Dog_Breed_Prediction;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FF6DC2FD2EDCD86600C8CE1E /* Frameworks */ = {
@@ -45,7 +31,8 @@
 		FF6DC2F72EDCD86600C8CE1E = {
 			isa = PBXGroup;
 			children = (
-				FF6DC3022EDCD86600C8CE1E /* Dog_Breed_Prediction */,
+				FF6DC3292EDD6BF500C8CE1E /* dogBreed.mlpackage */,
+				FF6DC3262EDD6A2000C8CE1E /* Dog_Breed_Prediction */,
 				FF6DC3012EDCD86600C8CE1E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,9 +59,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				FF6DC3022EDCD86600C8CE1E /* Dog_Breed_Prediction */,
 			);
 			name = Dog_Breed_Prediction;
 			packageProductDependencies = (
@@ -122,6 +106,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF6DC3282EDD6BB400C8CE1E /* Dog_Breed_Prediction in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +117,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF6DC32B2EDD6DAD00C8CE1E /* dogBreed.mlpackage in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

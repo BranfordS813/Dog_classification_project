@@ -67,15 +67,38 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        guard let modelURL = Bundle.main.url(forResource: "dogBreed", withExtension: "mlpackage") else {
-            fatalError("Couldn't find the model file.")
+        // Try direct initialization first (works if model is in bundle)
+        do {
+            model = try dogBreed()
+            print("Model loaded successfully using direct initialization")
+            return
+        } catch {
+            print("Direct initialization failed: \(error)")
         }
         
-        do {
-            model = try dogBreed(contentsOf: modelURL)
-        } catch {
-            fatalError("Couldn't load the model file: \(error.localizedDescription)")
+        // Fallback: Try loading from URL with mlpackage extension
+        if let modelURL = Bundle.main.url(forResource: "dogBreed", withExtension: "mlpackage") {
+            do {
+                model = try dogBreed(contentsOf: modelURL)
+                print("Model loaded successfully from URL: \(modelURL)")
+                return
+            } catch {
+                print("Error loading model from URL: \(error)")
+            }
         }
+        
+        // Fallback: Try without extension
+        if let modelURL = Bundle.main.url(forResource: "dogBreed", withExtension: nil) {
+            do {
+                model = try dogBreed(contentsOf: modelURL)
+                print("Model loaded successfully from URL (no extension): \(modelURL)")
+                return
+            } catch {
+                print("Error loading model (no extension): \(error)")
+            }
+        }
+        
+        fatalError("Couldn't find or load the model file. Make sure 'dogBreed.mlpackage' is added to your Xcode project target.")
     }
     
     // Impliment two delegate methods for the image picker: imagePickerController and imagePickerControllerDidCancel --> called when user selects imaage from library or cancles selecting image from library
@@ -89,10 +112,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             // Resize image: The model only takes in images of size 224x224; the image needs to bresized.
             
             //  Convert the selected image to size 224x224
-            UIGraphicsBeginImageContextWithOptions (CGSize(width: 277,
-            height: 277), true, 2.0)
-            pickedImage.draw(in: CGRect(x: 0, y: 0, width: 277,
-            height: 277))
+            UIGraphicsBeginImageContextWithOptions (CGSize(width: 224,
+            height: 224), true, 2.0)
+            pickedImage.draw(in: CGRect(x: 0, y: 0, width: 224,
+            height: 224))
             
             // Store the new image in the form of a pixel buffer
             let newImage = UIGraphicsGetImageFromCurrentImageContext()!
@@ -129,6 +152,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             CVPixelBufferUnlockBaseAddress(pixelBuffer!, CVPixelBufferLockFlags(rawValue: 0))
             
         // After image processing, the model is then called to predict the image (specifically the predicted ouput)
+            
+            // Check if model is loaded
+            guard model != nil else {
+                predictionText.text = "Model not loaded!"
+                return
+            }
             
             // Predict image label
             guard let prediction = try? model.prediction(resnet50_input:
