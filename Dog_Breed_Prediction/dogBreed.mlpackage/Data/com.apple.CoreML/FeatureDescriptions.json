@@ -1,15 +1,15 @@
 {
   "Inputs" : {
     "resnet50_input" : {
-      "MLFeatureShortDescription" : "--"
+      "MLFeatureShortDescription" : ""
     }
   },
   "Outputs" : {
     "classLabel_probs" : {
-      "MLFeatureShortDescription" : "--"
+      "MLFeatureShortDescription" : ""
     },
     "classLabel" : {
-      "MLFeatureShortDescription" : "--"
+      "MLFeatureShortDescription" : ""
     }
   },
   "TrainingInputs" : {

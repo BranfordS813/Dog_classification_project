@@ -1,11 +1,9 @@
 {
-  "MLModelVersionStringKey" : "--",
   "MLModelDescriptionKey" : "ResNet50 model trained on Stanford's database of dog breeds for prediction of breed: http:\/\/vision.stanford.edu\/aditya86\/ImageNetDogs\/",
   "MLModelCreatorDefinedKey" : {
     "com.github.apple.coremltools.version" : "9.0",
-    "com.github.apple.coremltools.conversion_date" : "2025-11-26",
-    "com.github.apple.coremltools.source" : "tensorflow==2.15.0"
+    "com.github.apple.coremltools.source" : "tensorflow==2.15.0",
+    "com.github.apple.coremltools.conversion_date" : "2025-11-26"
   },
-  "MLModelAuthorKey" : "Brandon Sanford; adapted from Mohit Thakkar",
-  "MLModelLicenseKey" : "--"
+  "MLModelAuthorKey" : "Brandon Sanford; adapted from Mohit Thakkar"
 }

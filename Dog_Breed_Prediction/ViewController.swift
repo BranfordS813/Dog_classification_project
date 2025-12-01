@@ -70,7 +70,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         guard let modelURL = Bundle.main.url(forResource: "dogBreed", withExtension: "mlpackage") else {
             fatalError("Couldn't find the model file.")
         }
-        model = try! dogBreed(contentsOf: modelURL)
+        
+        do {
+            model = try dogBreed(contentsOf: modelURL)
+        } catch {
+            fatalError("Couldn't load the model file: \(error.localizedDescription)")
+        }
     }
     
     // Impliment two delegate methods for the image picker: imagePickerController and imagePickerControllerDidCancel --> called when user selects imaage from library or cancles selecting image from library
