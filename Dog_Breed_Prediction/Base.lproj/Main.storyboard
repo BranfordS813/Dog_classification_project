@@ -26,8 +26,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Pick Image"/>
                                 <connections>
-                                    <action selector="btn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dhD-Nu-VFe"/>
-                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1ip-Qb-huw"/>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zgq-IS-qPl"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Image Prediction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2h-Od-s3j">
@@ -42,10 +41,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="UILabel" destination="M8f-cq-yqe" id="dlv-Sr-wbA"/>
                         <outlet property="btn" destination="boz-81-EoF" id="rNn-qs-BzM"/>
-                        <outlet property="imageView" destination="M8f-cq-yqe" id="CTC-Eu-Ezb"/>
-                        <outlet property="predictionText" destination="V2h-Od-s3j" id="iCy-ZM-ni8"/>
+                        <outlet property="imageView" destination="M8f-cq-yqe" id="Dq0-bJ-jyZ"/>
+                        <outlet property="predictionText" destination="V2h-Od-s3j" id="ZHf-6L-RFa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
