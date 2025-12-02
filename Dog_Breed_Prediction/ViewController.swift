@@ -24,6 +24,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         print("btn is connected: \(btn != nil)")
     }
 
+    // Outlets and Actions
     
     @IBOutlet weak var predictionText: UILabel!
     @IBOutlet weak var imageView: UIImageView!
